@@ -1,0 +1,14 @@
+{
+  "name": "stellar-upgrade-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "gulp": "^3.9.1",
+    "lodash": "^4.17.4",
+    "stellar-lib": "^0.10.3",
+    "tweetnacl": "0.11.2",
+    "webpack": "^3.0.0"
+  }
+}

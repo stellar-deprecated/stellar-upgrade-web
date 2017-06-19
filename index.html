@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stellar Upgrade</title>
+  <style type="text/css">
+    input {
+      width: 50%;
+    }
+
+    #response {
+      font-family: "Courier New", Courier, monospace;
+    }
+  </style>
+</head>
+<body>
+
+<p>
+  Old network secret key:
+  <br />
+  <input type="text" id="old_secret" value="" />
+</p>
+
+<p>
+  New network public key:
+  <br />
+  <input type="text" id="new_public" value="" />
+</p>
+
+<p>
+  <button id="upgrade">Upgrade</button>
+</p>
+
+<div id="response">
+</div>
+
+<script type="text/javascript" src="./dist/app.js"></script>
+</body>
+</html>
