@@ -5,6 +5,7 @@ import axios from 'axios';
 document.getElementById('upgrade').onclick = function() {
   var old_secret = document.getElementById('old_secret').value;
   var new_public = document.getElementById('new_public').value;
+  var code = document.getElementById('confirmation_code').value;
 
   var seed = new stellar.Seed().parse_json(old_secret);
   var keypair = seed.get_key();
@@ -22,7 +23,8 @@ document.getElementById('upgrade').onclick = function() {
   var request = {
     data: data,
     publicKey: nacl.util.encodeBase64(keypair._pubkey),
-    signature: signature
+    signature: signature,
+    code: code
   };
 
   if (confirm("Do you confirm upgrading your account to "+new_public+"?")) {
